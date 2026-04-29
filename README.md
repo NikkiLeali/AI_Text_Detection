@@ -1,5 +1,6 @@
 # Detecting AI-Generated Text Using Classical Machine Learning and LLM-Based Methods
 **Team: Nikki Leali, Ella Protz, and Angelica Rodriguez**
+
 CAP6635 Artifical Intelligence - Final Research Project
 
 ## Overview
