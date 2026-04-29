@@ -60,33 +60,17 @@ This ensured diversity while maintaining consistency with human data.
 
 ---
 
-## Dataset Composition
+## Final Dataset Composition
 
-### Human Data
-
-* 200 essay samples
-* 200 news article samples
-* 200 review samples
-
-Total: **600 human samples**
-
-
-### AI Data
-
-* 200 essay-style samples
-* 200 news-style samples
-* 200 review-style samples
-
-Total: **600 AI samples (zero-shot)**
-
-
-### Final Dataset
-
-* **Total samples:** 1,200
-* Balanced across:
-
-  * Human vs AI (600 / 600)
-  * Writing styles (essay / news / review)
+| Category        | Count    |
+| --------------- | -------- |
+| Human (Essays)  | 200      |
+| Human (News)    | 200      |
+| Human (Reviews) | 200      |
+| AI (Essays)     | 200      |
+| AI (News)       | 200      |
+| AI (Reviews)    | 200      |
+| **Total**       | **1200** |
 
 ---
 
