@@ -8,9 +8,12 @@ The dataset contains human-written and AI-generated text used to evaluate text c
 
 Each row includes:
 
+* `source_id`: identification from source csv
+* `source`: where the sample came from
 * `text`: the text sample
 * `label`: `human` or `ai`
 * `generation_type`: `human`, `zero_shot`, or `few_shot`
+
 
 ## Data Sources
 
@@ -18,14 +21,16 @@ Each row includes:
 * AI text: generated using a language model with zero-shot and few-shot prompts
 
 ### Kaggle Human-Written Source Options
-1. https://www.kaggle.com/code/erikbruin/nlp-on-student-writing-eda
-2. https://www.kaggle.com/code/robikscube/student-writing-competition-twitch-stream 
-3. https://www.kaggle.com/datasets/gpreda/ask-reddit
-4. https://www.kaggle.com/datasets/kritanjalijain/amazon-reviews
-5. https://www.kaggle.com/datasets/asad1m9a9h6mood/news-articles
-6. https://www.kaggle.com/datasets/vivekhn/yelp-reviews
+1. Essays: https://www.kaggle.com/datasets/mannacharya/aeon-essays-dataset
+2. Artcles: https://www.kaggle.com/datasets/asad1m9a9h6mood/news-articles
+3. Yelp: https://www.kaggle.com/datasets/vivekhn/yelp-reviews
 
-Likely essays, reddit, and reviews are the best choices for sourcing. 
+Human data split:
+* 33% student essays
+* 33% Yelp reviews
+* 33% news articles
+
+Final: 600 rows of cleaned text entries (200, 200, 200 split)
 
 ## Notes
 

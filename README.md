@@ -13,6 +13,12 @@ This project's goal is to 'develop and evaluate models that detect human-written
 * Compare performance between methods
 * Analyze differences in detectability between zero-shot and few-shot generated text
 
+## Setup
+1. Create a virtual environment
+2. pip install -r requirements.txt 
+3. ...
+
+
 ## Dataset
 
 The dataset will consist of at least 1,000 text samples:
