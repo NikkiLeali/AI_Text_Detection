@@ -223,7 +223,7 @@ with ThreadPoolExecutor(max_workers=N_WORKERS) as executor:
                 "source_id": f"error_{i}",
                 "text": None,
                 "label": "ai",
-                "generation_type": "zero_shot",
+                "generation_type": "ai_rewrite",
                 "topic": futures[future]["topic"],
                 "latency_sec": None,
                 "error": str(e)
@@ -273,7 +273,7 @@ print_examples_by_source(ai_test_df, n=2)
 
 # set output file
 
-OUTPUT_FILE = "../data/ai_generated_fewshot.csv"
+OUTPUT_FILE = "../data/ai_generated_rewrites.csv"
 
 # load existing data if present (resume capability)
 if os.path.exists(OUTPUT_FILE):
@@ -339,7 +339,7 @@ def generate_one_safe(task):
             "source": task["source"],
             "text": None,
             "label": "ai",
-            "generation_type": "zero_shot",
+            "generation_type": "ai_rewrite",
             "topic": task["topic"],
             "latency_sec": None,
             "error": str(e)
@@ -382,7 +382,7 @@ def run_batch(n_per_type=25, workers=2):
                     "source": task["source"],
                     "text": None,
                     "label": "ai",
-                    "generation_type": "zero_shot",
+                    "generation_type": "ai_rewrite",
                     "topic": task["topic"],
                     "latency_sec": None,
                     "error": str(e)
